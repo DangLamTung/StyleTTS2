@@ -38,7 +38,7 @@ model_params:
   n_mels: 80
 
   n_token: 178 # number of phoneme tokens
-  max_dur: 100 # maximum duration of a single phoneme
+  max_dur: 50 # maximum duration of a single phoneme
   style_dim: 128 # style vector size
   
   dropout: 0.2
@@ -107,5 +107,4 @@ slmadv_params:
   iter: 10 # update the discriminator every this iterations of generator update
   thresh: 5 # gradient norm above which the gradient is scaled
   scale: 0.01 # gradient scaling factor for predictors from SLM discriminators
-  sig: 1.5 # sigma for differentiable duration modeling
-  
+  sig: 1.5 # sigma for differentiable 
